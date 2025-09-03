@@ -1,0 +1,181 @@
+
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(to right, #60a5fa, #38bdf8, #6366f1);
+color: #333;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+overflow-x: hidden;
+box-sizing: border-box;
+}
+
+.app-container {
+width: 100%;
+max-width: 600px;
+padding: 20px;
+margin: 0 auto;
+text-align: center;
+box-sizing: border-box;
+}
+
+h1 {
+font-size: 2.5rem;
+font-weight: 800;
+color: white;
+margin-bottom: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+.search-form {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+background: white;
+border-radius: 20px;
+padding: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+margin: 0 auto;
+max-width: 100%;
+box-sizing: border-box;
+}
+
+.search-form input {
+flex: 1;
+border: none;
+outline: none;
+padding: 12px 15px;
+border-radius: 12px;
+font-size: 16px;
+width: 100%;
+box-sizing: border-box;
+}
+
+.search-form button {
+background: #2563eb;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 12px;
+font-size: 16px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.search-form button:hover {
+background: #1d4ed8;
+}
+
+.weather-card {
+margin-top: 30px;
+background: rgba(255, 255, 255, 0.95);
+border-radius: 20px;
+padding: 25px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+width: 100%;
+box-sizing: border-box;
+}
+
+.weather-card h2 {
+font-size: 1.8rem;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.weather-card p {
+margin: 8px 0;
+font-size: 1.2rem;
+color: #555;
+}
+
+.weather-card .temperature {
+font-size: 3rem;
+font-weight: bold;
+color: #2563eb;
+margin: 20px 0;
+}
+
+.weather-card .details {
+display: flex;
+justify-content: space-around;
+font-size: 1rem;
+color: #444;
+margin-top: 15px;
+}
+
+.error-message {
+margin-top: 20px;
+background: #fee2e2;
+color: #b91c1c;
+padding: 12px;
+border-radius: 10px;
+font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+h1 {
+font-size: 2rem;
+flex-direction: column;
+gap: 5px;
+}
+
+.search-form {
+flex-direction: column;
+padding: 15px;
+border-radius: 16px;
+}
+
+.search-form input {
+font-size: 15px;
+padding: 10px;
+border-radius: 10px;
+}
+
+.search-form button {
+width: 100%;
+margin-top: 8px;
+font-size: 15px;
+border-radius: 10px;
+}
+
+.weather-card {
+padding: 20px;
+}
+
+.weather-card h2 {
+font-size: 1.5rem;
+}
+
+.weather-card .temperature {
+font-size: 2.5rem;
+}
+
+.weather-card .details {
+flex-direction: column;
+gap: 10px;
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 1.8rem;
+}
+
+.search-form input,
+.search-form button {
+font-size: 14px;
+}
+
+.weather-card p {
+font-size: 1rem;
+}
+}
